@@ -44,3 +44,30 @@ const negativeNumber = -25;
 
 console.log(negativeNumber); */
 
+/* const a = +prompt('Введите первое число которие хотите сравнить', ''),
+      b = +prompt('Введите второе число которие хотите сравнить', '');
+
+if (a == b){
+    alert(`Number ${a} equals ${b}`);
+} else {
+    alert(`No, number ${a} noting equals number ${b}`);
+} */
+
+// еще один вариант сравнить что-то с чем-то, прри помощи строгого сравнения switch
+
+const num = 100;
+
+switch (num) {
+    case 50:
+        console.log('Wrong(');
+        break;
+    case 150:
+        console.log('Wrong(');
+        break;
+    case 100: // если будет 101 будет ответ No all chance mised(((
+        console.log('Yeah it right');
+        break;
+    default:
+        console.log('No all chance mised(((');
+        break;
+}
