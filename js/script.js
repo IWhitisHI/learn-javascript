@@ -51,7 +51,7 @@ if (a == b){
     alert(`Number ${a} equals ${b}`);
 } else {
     alert(`No, number ${a} noting equals number ${b}`);
-} */
+} 
 
 // еще один вариант сравнить что-то с чем-то, прри помощи строгого сравнения switch
 
@@ -70,4 +70,26 @@ switch (num) {
     default:
         console.log('No all chance mised(((');
         break;
+} */
+
+let a = 0;
+
+while (a < 100) {
+    console.log(a);
+    a++;
+}
+
+do {
+    console.log(a);
+    a++;
+}
+while (a < 100);
+
+let b = 1;
+
+for (let i = 1; i < 100; i++) {
+    if (i === 10){
+        break;
+    }
+    console.log(i);
 }
