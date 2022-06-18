@@ -70,7 +70,7 @@ switch (num) {
     default:
         console.log('No all chance mised(((');
         break;
-} */
+} 
 
 let a = 0;
 
@@ -92,4 +92,37 @@ for (let i = 1; i < 100; i++) {
         break;
     }
     console.log(i);
+} */
+
+/*
+      *
+     ***
+    *****
+   *******
+  *********
+ ***********
+*************
+
+
+let a = '';
+const b = 9;
+let c = 0;
+
+for (let i = 0; i < b; i++) {
+
+    for (let j = 8; j > i; j--) {
+        a += '  ';
+    }
+
+    for (let k = -1; k < i; k++) {
+        a += ' *';
+    }
+
+    for (let l = 0; l < i; l++) {
+        a += ' *';
+    }
+
+    a += '\n';
 }
+
+console.log(a); */
