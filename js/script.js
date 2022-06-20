@@ -197,3 +197,36 @@ for (let i = 1; i <= data.length; i++) {
 console.log(data);
 console.log(result);*/
 
+
+const lines = 5;
+let result = '';
+let result1 = '';
+
+for (let i = 0; i <= lines; i++) {
+    for (let j = 5; j > i; j--) {
+        result1 += ' ';
+    }
+    for (let k = -1; k < i; k++) {
+        result1 += '*';
+    }
+    for (let l = 0; l < i; l++) {
+        result1 += '*';
+    }
+
+    result1 += '\n';
+}
+
+console.log(result1);
+
+
+for (let i = 0; i <= lines; i++) {
+    for (let j = 0; j < lines - i; j++) {
+        result += " ";
+    }
+    for (let j = 0; j < 2 * i + 1; j++) {
+        result += "*";
+    }
+    result += "\n";
+}
+
+console.log(result);
