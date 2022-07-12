@@ -1,5 +1,8 @@
 'use strict';
 
+function showMassage(text){
+    console.log(text);
+}
 /* const ConsoleWOrD = 'Hello lika';
 
 console.log(ConsoleWOrD);
@@ -195,7 +198,7 @@ for (let i = 1; i <= data.length; i++) {
 }
 
 console.log(data);
-console.log(result);*/
+console.log(result);
 
 
 const lines = 5;
@@ -229,4 +232,16 @@ for (let i = 0; i <= lines; i++) {
     result += "\n";
 }
 
-console.log(result);
+console.log(result);*/
+
+showMassage('Hello my name Vitalii');
+
+const calc = function(a, b){
+    return a + b * 2;
+};
+
+showMassage( calc(2, 2));
+
+const calc2 = (a, b , c) => (a + b) * c ;
+
+showMassage(calc2(8, 10, 50));
