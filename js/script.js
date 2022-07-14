@@ -1,9 +1,9 @@
 'use strict';
 
-function showMassage(text){
+/*function showMassage(text){
     console.log(text);
 }
-/* const ConsoleWOrD = 'Hello lika';
+const ConsoleWOrD = 'Hello lika';
 
 console.log(ConsoleWOrD);
 
@@ -232,7 +232,7 @@ for (let i = 0; i <= lines; i++) {
     result += "\n";
 }
 
-console.log(result);*/
+console.log(result);
 
 showMassage('Hello my name Vitalii');
 
@@ -245,3 +245,7 @@ showMassage( calc(2, 2));
 const calc2 = (a, b , c) => (a + b) * c ;
 
 showMassage(calc2(8, 10, 50));
+
+const word = ('myNameVitaliiI`m 20');
+
+console.log(word.slice(20, 21));*/
