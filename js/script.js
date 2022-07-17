@@ -249,3 +249,86 @@ showMassage(calc2(8, 10, 50));
 const word = ('myNameVitaliiI`m 20');
 
 console.log(word.slice(20, 21));*/
+
+function calculateVolumeAndArea(length) {
+    if (typeof(length) !== 'number' || length <= 0 || !Number.isInteger(length)) {
+        return "При вычислении произошла ошибка";
+    }
+
+    let volume = 0,
+        area = 0;
+
+    volume = length * length * length;
+    area = 6 * (length * length);
+
+    return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
+}
+
+function getCoupeNumber(place) {
+    if (typeof(place) == 'string' || place < 0 || !Number.isInteger(place)) {
+        return "Ошибка. Проверьте правильность введенного номера места";
+    } else if (place == 0 || place > 36) {
+        return "Таких мест в вагоне не существует";
+    } 
+
+    for (let i = 4; i <= 36; i = i + 4 ) {
+        if (place <= i) {
+            return Math.ceil(i / 4);
+        }
+    }
+}
+
+function getTimeFromMinutes(minutesTotal) {
+    if (typeof(minutesTotal) === 'string' || minutesTotal < 0 || !Number.isInteger(minutesTotal) ) {
+        return 'Ошибка, проверьте данные';
+    }
+
+    const hours = Math.floor(minutesTotal / 60),
+          minutes = minutesTotal % 60;
+    
+    let hoursStr = '';
+
+    switch (hours) {
+        case 0: 
+            hoursStr = 'часов';
+            break;
+        case 1: 
+            hoursStr = 'час';
+            break;
+        case 2:
+        case 3:
+        case 4: 
+            hoursStr = 'часа';
+            break;
+        default:
+            hoursStr = 'часов';
+    }
+    return `Это ${hours} ${hoursStr} и ${minutes} минут`;
+}
+
+console.log(getTimeFromMinutes(180));
+
+function fib(num) {
+    if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+        return '';
+    }
+
+    let result = '',
+        first = 0,
+        second = 1;
+
+    for (let i = 0; i < num; i++){
+        if (i + 1 === num ){
+            result += `${first}`;
+        } else {
+            result += `${first} `;
+        }
+
+        let third = first + second;
+        first = second;
+        second = third;
+    }
+    return result;
+}
+
+console.log(fib(100));
