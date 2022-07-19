@@ -365,4 +365,7 @@ obj.showKeys();
 
 const {border, backGround} = obj.color;
 
-console.log(border);*/
+console.log(border);
+
+
+*/
