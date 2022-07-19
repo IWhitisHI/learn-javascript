@@ -1,9 +1,9 @@
 'use strict';
 
-/*function showMassage(text){
+function showMassage(text){
     console.log(text);
 }
-const ConsoleWOrD = 'Hello lika';
+/*const ConsoleWOrD = 'Hello lika';
 
 console.log(ConsoleWOrD);
 
@@ -248,7 +248,7 @@ showMassage(calc2(8, 10, 50));
 
 const word = ('myNameVitaliiI`m 20');
 
-console.log(word.slice(20, 21));*/
+console.log(word.slice(20, 21));
 
 function calculateVolumeAndArea(length) {
     if (typeof(length) !== 'number' || length <= 0 || !Number.isInteger(length)) {
@@ -332,3 +332,37 @@ function fib(num) {
 }
 
 console.log(fib(100));
+
+const obj = {
+    position: 'centre',
+    width: 1920,
+    height: 1024,
+    name: 'test',
+    color: {
+        border: 'white',
+        backGround: 'black'
+    },
+    dsafdsaf:'sdfadsf',
+    dafsadsfda: 'dsafa',
+    showKeys: function(){
+        showMassage(Object.keys(obj).length);
+    }
+};
+
+for (let key in obj) {
+    if (typeof(obj[key]) === 'object') {
+        for (let i in obj[key]) {
+            showMassage(`Массив ${key} имеет свойство ${i} со значением ${obj[key][i]}`);
+        }
+    } else{
+    showMassage(`Свойство ${key} имеет значение ${obj[key]}`);
+    }
+}
+
+showMassage(Object.keys(obj).length);
+
+obj.showKeys();
+
+const {border, backGround} = obj.color;
+
+console.log(border);*/
