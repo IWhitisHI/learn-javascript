@@ -21,8 +21,8 @@ console.log(user);
 
 //            0              1             2            3              4          5  6  7   8
 const fruit = ['orange.png', 'melon.png', 'cherry.png', 'apple.jpek', 'pear.png', 1, 0, 10, 20 ];
-console.log(fruit[4]); */
-/*
+console.log(fruit[4]);
+
 const result = confirm('Вам 18 років?');
 alert(result); */
 
