@@ -3,7 +3,7 @@
 function showMassage(text){
     console.log(text);
 }
-/*const ConsoleWOrD = 'Hello lika';
+/* const ConsoleWOrD = 'Hello lika';
 
 console.log(ConsoleWOrD);
 
@@ -24,17 +24,17 @@ const fruit = ['orange.png', 'melon.png', 'cherry.png', 'apple.jpek', 'pear.png'
 console.log(fruit[4]);
 
 const result = confirm('Вам 18 років?');
-alert(result); */
+alert(result);
 
-/* const age = +prompt('How old are you?', 'number'); // чтобы вивести число необходимо поставить +.
+ const age = +prompt('How old are you?', 'number'); // чтобы вивести число необходимо поставить +.
 // Если без плюса тогда строка!!!!
 alert(age);
-console.log(typeof(age)); */
+console.log(typeof(age)); 
 
-/* let incr = 10,
+ let incr = 10,
     decr = 10;
 
-/*console.log(incr++);
+console.log(incr++);
 console.log(decr--);
 
 console.log(incr);
@@ -45,9 +45,9 @@ console.log(--decr);
 
 const negativeNumber = -25;
 
-console.log(negativeNumber); */
+console.log(negativeNumber);
 
-/* const a = +prompt('Введите первое число которие хотите сравнить', ''),
+ const a = +prompt('Введите первое число которие хотите сравнить', ''),
       b = +prompt('Введите второе число которие хотите сравнить', '');
 
 if (a == b){
@@ -368,4 +368,22 @@ const {border, backGround} = obj.color;
 console.log(border);
 
 
-*/
+const arr = [1, 2, 5, 3, 4, 5, 7, 8, 8];
+arr[arr.length] = 1;
+
+
+for (let i = 0; i < arr.length; i++){
+    console.log(arr[i]);
+}
+
+// for(let value of arr){
+//     console.log(value);
+// }
+
+console.log(arr);
+
+const str = 'fasdfsad, dsfadsf, dsfasdad, fsdfdsfd, fsfsd, dsfasdf, sadfdasf, adsf ads, dsafs, fdsafa, as';
+
+const products = str.split(', ');
+
+showMassage(products);*/
