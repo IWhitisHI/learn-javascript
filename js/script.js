@@ -386,7 +386,7 @@ const str = 'fasdfsad, dsfadsf, dsfasdad, fsdfdsfd, fsfsd, dsfasdf, sadfdasf, ad
 
 const products = str.split(', ');
 
-showMassage(products);*/
+showMassage(products);
 
 const personalPlanPeter = {
     name: "Peter",
@@ -458,4 +458,37 @@ function standardizeStrings(arr) {
     });
 }
 
-showConsole(standardizeStrings(favoriteCities));
+// showConsole(standardizeStrings(favoriteCities));
+
+const someString = 1;
+
+function reverse(str) {
+    if (typeof(str) === 'string') {
+        const strModified = str.split('');
+        strModified.reverse();
+        str = strModified.join('');
+    } else {
+        return 'Ошибка!';
+    }
+    return str;
+}
+
+showConsole(reverse(someString));
+*/
+
+const baseCurrencies = ['USD', 'EUR'];
+const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+
+function availableCurr(arr, missingCurr) {
+    let str = '';
+    arr.length === 0 ? str = 'Нет доступных валют' : str = 'Доступные валюты:';
+
+    arr.forEach(function(currencies) {
+        if (currencies !== missingCurr){
+        str += `\n${currencies}`;
+        }
+    });
+    return str;
+}
+
+showConsole(availableCurr([...baseCurrencies, ...additionalCurrencies], 'EUR'));
