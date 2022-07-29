@@ -474,7 +474,7 @@ function reverse(str) {
 }
 
 showConsole(reverse(someString));
-*/
+
 
 const baseCurrencies = ['USD', 'EUR'];
 const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
@@ -492,3 +492,4 @@ function availableCurr(arr, missingCurr) {
 }
 
 showConsole(availableCurr([...baseCurrencies, ...additionalCurrencies], 'EUR'));
+*/
