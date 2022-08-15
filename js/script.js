@@ -569,7 +569,7 @@ showConsole(parseInt('13px', 3));
 const a = 1;
 showConsole(!!a);
 
-console.log( typeof(+"Infinity") );*/
+console.log( typeof(+"Infinity") );
 
 const restorantData = {
     menu: [
@@ -623,4 +623,4 @@ function transferWaitors(data) {
     return copy;
 }
 
-transferWaitors(restorantData);
+transferWaitors(restorantData);*/
