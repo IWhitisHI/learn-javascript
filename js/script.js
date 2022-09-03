@@ -624,3 +624,11 @@ function transferWaitors(data) {
 }
 
 transferWaitors(restorantData);*/
+
+const cube = document.getElementById('box'),
+      butn = document.getElementsByTagName('button');
+
+cube.style.alignItems = 'center';
+cube.style.border = '4mm ridge rgba(100,0,10,1';
+
+butn[2].style.borderRadius = '150%';
