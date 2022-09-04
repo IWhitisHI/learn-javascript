@@ -3,7 +3,7 @@
   height: 150px;
   background-color: red;
 }
-button {
+.just-button {
 	width: 80px;
 	height: 30px;
 	margin-top: 10px;
@@ -75,4 +75,32 @@ button {
 	margin-bottom: 30px;
 	margin-top: 30px;
 	color: #fff;
+}
+.test-button {
+   width: 150px;
+   height: 50px;
+   background-color: green;
+   border: none;
+   color: #fff;
+   border-radius: 10px;
+   outline: none;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.test-button:hover {
+   transform: scale(0.95);
+}
+.overlay {
+   background-color: pink;
+   width: 200px;
+   height: 100px;
+   text-align: center;
+   line-height: 100px;
+}
+a{
+   display: block;
+   margin-top: 30px;
+}
+.thre-buttons{
+   margin: 2%;
 }
