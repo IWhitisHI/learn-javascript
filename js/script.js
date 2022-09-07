@@ -633,23 +633,46 @@ function showConsole(text){
 
 // butn[2].style.borderRadius = '150%';
 
-const evBtn = document.getElementById('btn'),
-      link = document.querySelector('a');
+// const evBtn = document.getElementById('btn'),
+//       link = document.querySelector('a');
 
 // let i = 0;
 
-const deleteElement = (event) =>{
-    console.log(event.target);
+// const deleteElement = (event) =>{
+//     console.log(event.target);
     // i++;
     // if (i === 1) {
     //     evBtn.removeEventListener('click', deleteElement);
     // }
-};
+// };
 
-evBtn.addEventListener('click', deleteElement, {once: true}); // тут зявдяки , {once: true} можна видалити всю умову відміни натискання
+// evBtn.addEventListener('click', deleteElement, {once: true}); // тут зявдяки , {once: true} можна видалити всю умову відміни натискання
 
-link.addEventListener('click', event =>{
-    event.preventDefault();
+// link.addEventListener('click', event =>{
+//     event.preventDefault();
 
-    console.log(event.target);
-});  // якщо тут буде , {once: true}, то ми перейдемо по посиланню 
+//     console.log(event.target);
+// });  // якщо тут буде , {once: true}, то ми перейдемо по посиланню 
+
+// function degree(x, n) {
+//     if (n == 1) {
+//         return x;
+//     } else {
+//         return x * degree(x, n - 1);
+//     }
+// }
+
+// console.log(degree(2, 50));
+
+
+// function factorial(n) {
+//     if( n === 'string' || !Number.isInteger(n) ) {
+//         return 'любым сообщением на ваше усмотрение.';
+//     } else if (n <= 0) {
+//         return 1;   
+//     } else {
+//         return n * factorial(n - 1);
+//     }
+// }
+
+// console.log(factorial(4));
